@@ -1,0 +1,57 @@
+package assignment;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class AreaOfShapes{
+	double area(double a,double b)
+	{
+	return a*b;
+	}
+	double area(double r)
+	{
+	return 3.14*r*r;
+	}
+	double area(double a,double b,double c)  
+	{
+		double temp = (a + b + c); 
+		double s= temp/2;        
+		double triarea = Math.sqrt(s*(s-a)*(s-b)*(s-c));        
+		return triarea;
+	}
+	public static void main(String p[]) throws IOException {     
+		AreaOfShapes d = new AreaOfShapes();   
+		BufferedReader Br = new BufferedReader(new InputStreamReader(System.in)); 
+		int choice =Integer.parseInt(Br.readLine()); 
+		switch(choice) {     
+		case 1:          
+			System.out.print("\n Enter the length : ");    
+			int a =Integer.parseInt(Br.readLine());       
+			System.out.print("\n Enter the breadth : ");        
+			int b=Integer.parseInt(Br.readLine());          
+			System.out.println("Area of rectangle is:"+d.area(a,b));         
+			break;   
+		case 2:
+			System.out.print("\n Enter the edge: ");    
+			int l =Integer.parseInt(Br.readLine());          
+			System.out.println("Area of Square is:"+d.area(l,l));         
+			break; 
+		case 3:     
+			System.out.print("\n Enter the radius : ");        
+	        int r =Integer.parseInt(Br.readLine()); 
+	        System.out.println("Area of circle is:"+d.area(r));     
+	        break; 
+	    case 4:          
+		    System.out.print("\n Enter side 1 : ");    
+		    int x =Integer.parseInt(Br.readLine());        
+		    System.out.print("\n Enter side 2 : ");      
+		    int y=Integer.parseInt(Br.readLine()); 
+		    System.out.print("\n Enter side 3 : ");  
+		    int z =Integer.parseInt(Br.readLine());         
+		    System.out.println("Area of traingle is:"+d.area(x,y,z));       
+		break;       
+	default:     
+		System.out.println("Invalid choice");    
+		}   }
+}	
