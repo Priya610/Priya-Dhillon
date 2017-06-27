@@ -1,0 +1,20 @@
+package assignment;
+
+public class Animal {
+	public void movement(){
+		System.out.println("Animals can move");
+		}
+}
+public class Dogs extends Animal{
+	public void movement(){
+		System.out.println("Dogs can walk and run");
+		}
+}
+public class TestClass1 {
+	public static void main(String args[]){
+		Animal obj1= new Animal(); //Base Class Reference and object
+		Animal obj2= new Dogs();//Base Class Reference and Derived Class object
+		obj1.movement();
+		obj2.movement();
+ }
+}
