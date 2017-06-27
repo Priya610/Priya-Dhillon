@@ -1,0 +1,17 @@
+package assignment;
+
+public class Counter {
+	int i=1;
+	void increment()
+	{
+		i=i+2;
+		System.out.print("i="+i);
+	}
+}
+public class SubCounter extends Counter{
+	public static void main(String args[])
+	{
+		SubCounter obj=new SubCounter();
+		obj.increment();
+	}
+}
