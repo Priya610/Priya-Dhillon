@@ -27,28 +27,28 @@ public class AreaOfShapes{
 		switch(choice) {     
 		case 1:          
 			System.out.print("\n Enter the length : ");    
-			int a =Integer.parseInt(Br.readLine());       
+			double a =Double.parseDouble(Br.readLine());       
 			System.out.print("\n Enter the breadth : ");        
-			int b=Integer.parseInt(Br.readLine());          
+			double b=Double.parseDouble(Br.readLine());          
 			System.out.println("Area of rectangle is:"+d.area(a,b));         
 			break;   
 		case 2:
 			System.out.print("\n Enter the edge: ");    
-			int l =Integer.parseInt(Br.readLine());          
+			double l =Double.parseDouble(Br.readLine());          
 			System.out.println("Area of Square is:"+d.area(l,l));         
 			break; 
 		case 3:     
 			System.out.print("\n Enter the radius : ");        
-	        int r =Integer.parseInt(Br.readLine()); 
+	        double r =Double.parseDouble(Br.readLine()); 
 	        System.out.println("Area of circle is:"+d.area(r));     
 	        break; 
 	    case 4:          
 		    System.out.print("\n Enter side 1 : ");    
-		    int x =Integer.parseInt(Br.readLine());        
+		    double x =Double.parseDouble(Br.readLine());        
 		    System.out.print("\n Enter side 2 : ");      
-		    int y=Integer.parseInt(Br.readLine()); 
+		    double y=Double.parseDouble(Br.readLine()); 
 		    System.out.print("\n Enter side 3 : ");  
-		    int z =Integer.parseInt(Br.readLine());         
+		    double z =Double.parseDouble(Br.readLine());         
 		    System.out.println("Area of traingle is:"+d.area(x,y,z));       
 		break;       
 	default:     
