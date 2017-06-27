@@ -1,0 +1,36 @@
+package assignment;
+
+public class BaseClass {
+	void demo (int a)
+    {
+       System.out.println ("a: " + a);
+    }
+    void demo (int a, int b)
+    {
+       System.out.println ("a and b: " + a + "," + b);
+    }
+    double demo(double a) {
+       System.out.println("double a: " + a);
+       return a*a;
+    }
+	public void seek(){
+		System.out.println("I'm the method of BaseClass");
+		}
+}
+public class DerivedClass extends BaseClass{
+	public void seek(){
+		System.out.println("I'm the method of Derived Class");
+	}
+}
+public class TestClass {
+	public static void main(String args[]){
+		BaseClass obj1= new BaseClass(); //Base Class Reference and object
+		BaseClass obj2= new DerivedClass();//Base Class Reference and Derived Class object
+		obj1.demo(20);
+		obj1.demo(10,80);
+		obj1.demo(20.67);
+		obj1.seek();
+		obj2.seek();
+		}
+}
+
